@@ -1,0 +1,145 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "EXP | Games Premium", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+OrionLib:MakeNotification({
+	Name = "Welcome!",
+	Content = "Welcome, U using Premium, Need help join discord",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+wait(3)
+warn("ScriptHub loaded")
+warn("Checking......")
+warn("No error founded")
+OrionLib:MakeNotification({
+	Name = "Loading",
+	Content = "The scripts loaded",
+	Image = "rbxassetid://4483345998",
+	Time = 4
+})
+local Tab = Window:MakeTab({
+	Name = "Aim Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+-- dahood section
+local Main = Tab:AddSection({
+	Name = "Dahood Aim scripts"
+})
+Tab:AddButton({
+	Name = "ESP",
+	Callback = function()
+        loadstring(game.HttpGet(('https://raw.githubusercontent.com/LegendDevReal/HACKS1/main/ESP'),true))()
+  	end  
+})
+Tab:AddButton({
+	Name = "AimLock",
+	Callback = function()
+        loadstring(game.HttpGet(('https://raw.githubusercontent.com/LegendDevReal/HACKS1/main/AimLock'),true))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Slient Aim",
+	Callback = function()
+        loadstring(game.HttpGet(('https://raw.githubusercontent.com/LegendDevReal/HACKS1/main/Slient%20Aim'),true))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Anti aim viewer",
+	Callback = function()
+        loadstring(game.HttpGet(('https://raw.githubusercontent.com/LegendDevReal/HACKS1/main/Anti%20aim%20viewer'),true))()
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "Player",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+-- Player section
+local Main = Tab:AddSection({
+	Name = "Player"
+})
+Tab:AddSlider({
+	Name = "WalkSpeed",
+	Min = 16,
+	Max = 500,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "WS",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end    
+})
+Tab:AddSlider({
+	Name = "JumpHeight",
+	Min = 50,
+	Max = 500,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Height",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end    
+})
+Tab:AddButton({
+	Name = "Noclip",
+	Callback = function()
+        loadstring(game.HttpGet(('https://raw.githubusercontent.com/LegendDevReal/HACKS1/main/Noclip'),true))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Fly",
+	Callback = function()
+        loadstring(game.HttpGet(('https://raw.githubusercontent.com/LegendDevReal/HACKS1/main/Fly'),true))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Anti stomp",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/BlueaqeR/scripts-lol/main/Da%20Hood%20Anti%20Stomp%20(Optimized)"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Anti Lock",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/PawsThePaw/Plutonium.AA/main/Plutonium.Loader.lua", true))()
+  	end    
+})
+Tab:AddButton({
+	Name = "FE Invisible",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/LegendDevReal/HACKS1/main/FE%20Invisible'))()
+  	end    
+})
+Tab:AddButton({
+	Name = "FE Sonic",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/LegendDevReal/HACKS1/main/FE%20Sonic'))()
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "Links",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Tiktok: SwordSlide0h"
+})
+local Section = Tab:AddSection({
+	Name = "YT: Exploitergames"
+})
+local Section = Tab:AddSection({
+	Name = "discord: If u want to join the discord to youtube or tiktok"
+})
+local Tab = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Progamer/Owner: SwordSlide0h"
+})
+local Section = Tab:AddSection({
+	Name = "Thank you for using updates soon.."
+})
